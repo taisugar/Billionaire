@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/lyHelp">
+
+        <ImageButton
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/help1"
+            android:background="@drawable/call" />
+
+        <ImageButton
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/help2"
+            android:background="@drawable/help" />
+
+        <ImageButton
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/help3"
+            android:background="@drawable/fifty" />
+
+        <ImageButton
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:id="@+id/help4"
+            android:background="@drawable/refresh_quesiton" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/background_question">
+
+        <TextView
+            android:layout_width="290dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvQues"
+            android:textAlignment="center"
+            android:text="A.B.C.D."
+            android:textSize="19dp"
+            android:padding="10dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Câu hỏi số:"
+            android:id="@+id/tv"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="55dp"/>
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center"
+            android:id="@+id/tvCTimer"
+            android:text="00"
+            android:textSize="25sp"
+            android:gravity="center"
+            android:textColor="#e8821e"/>
+    </FrameLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:id="@+id/lyQuestion"
+        android:layout_marginBottom="30dp">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/answer_a"
+            android:id="@+id/btnA"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/answer_b"
+            android:id="@+id/btnB"
+            android:layout_marginBottom="10dp" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/answer_c"
+            android:id="@+id/btnC"
+            android:layout_marginBottom="10dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/answer_d"
+            android:id="@+id/btnD"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="170dp"
+        android:layout_height="500dp"
+        android:id="@+id/lyMilestone"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:layout_width="138dp"
+            android:layout_height="29dp"
+            android:id="@+id/mile1"
+            android:layout_marginTop="330dp"
+            android:background="@drawable/mile_1"/>
+
+        <ImageView
+            android:layout_width="138dp"
+            android:layout_height="29dp"
+            android:id="@+id/mile2"
+            android:layout_marginTop="174dp"
+            android:background="@drawable/mile_2"/>
+
+        <ImageView
+            android:layout_width="138dp"
+            android:layout_height="29dp"
+            android:id="@+id/mile3"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/mile_3"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="170dp"
+            android:layout_height="500dp"
+            android:background="@drawable/mile_stone" />
+    </FrameLayout>
+</RelativeLayout>

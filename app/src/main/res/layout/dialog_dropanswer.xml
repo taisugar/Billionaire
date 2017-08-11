@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="200dp"
+    android:background="@drawable/droptwowronganswer_bg"
+    android:layout_gravity="center_horizontal">
+
+    <ImageButton
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnYes"
+        android:background="@drawable/ok"
+        android:layout_gravity="left|bottom"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="50dp"/>
+
+    <ImageButton
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:id="@+id/btnNo"
+        android:background="@drawable/cancel"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="50dp" />
+
+</FrameLayout>
